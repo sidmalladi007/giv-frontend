@@ -15,6 +15,7 @@
 		9DDEF7491DF4185800382558 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DDEF7471DF4185800382558 /* LaunchScreen.storyboard */; };
 		9DDEF7541DF4185800382558 /* GivTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF7531DF4185800382558 /* GivTests.swift */; };
 		9DDEF75F1DF4185800382558 /* GivUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF75E1DF4185800382558 /* GivUITests.swift */; };
+		9DDEF76D1DF41D1000382558 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF76C1DF41D1000382558 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9DDEF75A1DF4185800382558 /* GivUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GivUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DDEF75E1DF4185800382558 /* GivUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GivUITests.swift; sourceTree = "<group>"; };
 		9DDEF7601DF4185800382558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DDEF76C1DF41D1000382558 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				9DDEF73C1DF4185800382558 /* AppDelegate.swift */,
 				9DDEF73E1DF4185800382558 /* FirstViewController.swift */,
+				9DDEF76C1DF41D1000382558 /* ThirdViewController.swift */,
 				9DDEF7401DF4185800382558 /* SecondViewController.swift */,
 				9DDEF7421DF4185800382558 /* Main.storyboard */,
 				9DDEF7451DF4185800382558 /* Assets.xcassets */,
@@ -264,6 +267,7 @@
 			files = (
 				9DDEF7411DF4185800382558 /* SecondViewController.swift in Sources */,
 				9DDEF73D1DF4185800382558 /* AppDelegate.swift in Sources */,
+				9DDEF76D1DF41D1000382558 /* ThirdViewController.swift in Sources */,
 				9DDEF73F1DF4185800382558 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
