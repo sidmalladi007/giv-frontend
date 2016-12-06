@@ -1,5 +1,5 @@
 //
-//  FourthViewController.swift
+//  ThirdViewController.swift
 //  Giv
 //
 //  Created by Akash Kejriwal on 12/4/16.

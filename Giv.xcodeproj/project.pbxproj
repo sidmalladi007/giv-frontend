@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D2022EB1DF6DFF3008843E6 /* ViewCharityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2022EA1DF6DFF3008843E6 /* ViewCharityTableViewController.swift */; };
 		9DAC7E961DF6C55B00403D00 /* AddCharityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAC7E951DF6C55B00403D00 /* AddCharityViewController.swift */; };
 		9DDEF73D1DF4185800382558 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF73C1DF4185800382558 /* AppDelegate.swift */; };
 		9DDEF73F1DF4185800382558 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF73E1DF4185800382558 /* FirstViewController.swift */; };
-		9DDEF7411DF4185800382558 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF7401DF4185800382558 /* SecondViewController.swift */; };
+		9DDEF7411DF4185800382558 /* TransactionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF7401DF4185800382558 /* TransactionTableViewController.swift */; };
 		9DDEF7441DF4185800382558 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DDEF7421DF4185800382558 /* Main.storyboard */; };
 		9DDEF7461DF4185800382558 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DDEF7451DF4185800382558 /* Assets.xcassets */; };
 		9DDEF7491DF4185800382558 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DDEF7471DF4185800382558 /* LaunchScreen.storyboard */; };
@@ -38,11 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D2022EA1DF6DFF3008843E6 /* ViewCharityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCharityTableViewController.swift; sourceTree = "<group>"; };
 		9DAC7E951DF6C55B00403D00 /* AddCharityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCharityViewController.swift; sourceTree = "<group>"; };
 		9DDEF7391DF4185800382558 /* Giv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Giv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DDEF73C1DF4185800382558 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DDEF73E1DF4185800382558 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		9DDEF7401DF4185800382558 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		9DDEF7401DF4185800382558 /* TransactionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewController.swift; sourceTree = "<group>"; };
 		9DDEF7431DF4185800382558 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DDEF7451DF4185800382558 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DDEF7481DF4185800382558 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -108,10 +110,11 @@
 				9DDEF73C1DF4185800382558 /* AppDelegate.swift */,
 				9DDEF73E1DF4185800382558 /* FirstViewController.swift */,
 				9DDEF76C1DF41D1000382558 /* ThirdViewController.swift */,
-				9DDEF7401DF4185800382558 /* SecondViewController.swift */,
+				9DDEF7401DF4185800382558 /* TransactionTableViewController.swift */,
 				9DDEF7421DF4185800382558 /* Main.storyboard */,
 				9DDEF76E1DF46ACB00382558 /* FourthViewController.swift */,
 				9DAC7E951DF6C55B00403D00 /* AddCharityViewController.swift */,
+				9D2022EA1DF6DFF3008843E6 /* ViewCharityTableViewController.swift */,
 				9DDEF7451DF4185800382558 /* Assets.xcassets */,
 				9DDEF7471DF4185800382558 /* LaunchScreen.storyboard */,
 				9DDEF74A1DF4185800382558 /* Info.plist */,
@@ -271,12 +274,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DDEF7411DF4185800382558 /* SecondViewController.swift in Sources */,
+				9DDEF7411DF4185800382558 /* TransactionTableViewController.swift in Sources */,
 				9DDEF73D1DF4185800382558 /* AppDelegate.swift in Sources */,
 				9DDEF76D1DF41D1000382558 /* ThirdViewController.swift in Sources */,
 				9DDEF73F1DF4185800382558 /* FirstViewController.swift in Sources */,
 				9DDEF76F1DF46ACB00382558 /* FourthViewController.swift in Sources */,
 				9DAC7E961DF6C55B00403D00 /* AddCharityViewController.swift in Sources */,
+				9D2022EB1DF6DFF3008843E6 /* ViewCharityTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
