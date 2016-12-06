@@ -267,7 +267,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ja9-O8-KSq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2585" y="989"/>
+            <point key="canvasLocation" x="2938" y="1106"/>
         </scene>
         <!--Landing View Controller-->
         <scene sceneID="rbm-kr-2G3">
@@ -443,6 +443,75 @@
             </objects>
             <point key="canvasLocation" x="1897.5" y="-465.5"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="lrm-b7-eiR">
+            <objects>
+                <viewController id="9kZ-ZC-n25" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gl6-uC-IVF"/>
+                        <viewControllerLayoutGuide type="bottom" id="ygr-1p-Kzx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pBi-zZ-nP1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue_wallpaper-1" translatesAutoresizingMaskIntoConstraints="NO" id="P3t-h9-aW6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMI-gm-gga">
+                                <rect key="frame" x="42" y="137" width="291" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">GIV connects  securely to your account's, rounds up spare change to the nearest dollar, and donates it to your favorite causes. </string>
+                                <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbT-BA-5Mq">
+                                <rect key="frame" x="55" y="532" width="265" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="25"/>
+                                <state key="normal" title="CONNECT ACCOUNT">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="HJw-p1-WZk" kind="modal" id="n3a-2S-QB7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="gear" id="pDg-9L-qo7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pLF-a6-Q4e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2357.5" y="-466.5"/>
+        </scene>
+        <!--Link View Controller-->
+        <scene sceneID="oGo-qd-MP8">
+            <objects>
+                <viewController id="HJw-p1-WZk" customClass="LinkViewController" customModule="Giv" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3IS-hT-j5p"/>
+                        <viewControllerLayoutGuide type="bottom" id="BL4-uW-qmh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yOT-9A-r2L">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue_wallpaper-1" translatesAutoresizingMaskIntoConstraints="NO" id="hi4-T7-FJa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vjF-VQ-DY8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2799" y="-465"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="Ivz-ga-0wF">
             <objects>
@@ -537,7 +606,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8pq-Co-P15" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3023" y="989"/>
+            <point key="canvasLocation" x="2066" y="1106"/>
         </scene>
         <!--Tranasctions-->
         <scene sceneID="JIT-BS-uYu">
@@ -566,7 +635,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k2x-wX-bVp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2166" y="989"/>
+            <point key="canvasLocation" x="2504" y="1106"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -582,11 +651,12 @@
                         <segue destination="y31-0t-n4X" kind="relationship" relationship="viewControllers" id="DPt-fc-bea"/>
                         <segue destination="BJx-bJ-aco" kind="relationship" relationship="viewControllers" id="26R-Xa-bK1"/>
                         <segue destination="J12-Rx-tvf" kind="relationship" relationship="viewControllers" id="f2L-ua-EYQ"/>
+                        <segue destination="9kZ-ZC-n25" kind="relationship" relationship="viewControllers" id="qMv-Zv-D1Z"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2585" y="256"/>
+            <point key="canvasLocation" x="2366" y="256"/>
         </scene>
         <!--Charities-->
         <scene sceneID="sby-tJ-iGQ">
@@ -624,7 +694,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zgb-hg-WUh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3023" y="256"/>
+            <point key="canvasLocation" x="2804" y="256"/>
         </scene>
     </scenes>
     <resources>
@@ -634,6 +704,7 @@
         <image name="coin-stack (1)" width="512" height="512"/>
         <image name="donate_init" width="263" height="58"/>
         <image name="first" width="30" height="30"/>
+        <image name="gear" width="21" height="21"/>
         <image name="user_prof_reset_credit_card" width="329" height="63"/>
         <image name="view credit cards" width="329" height="63"/>
     </resources>
