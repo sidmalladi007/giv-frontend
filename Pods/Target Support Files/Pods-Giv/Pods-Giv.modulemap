@@ -1,0 +1,6 @@
+framework module Pods_Giv {
+  umbrella header "Pods-Giv-umbrella.h"
+
+  export *
+  module * { export * }
+}

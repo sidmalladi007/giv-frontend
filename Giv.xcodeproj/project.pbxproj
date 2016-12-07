@@ -21,6 +21,7 @@
 		9DDEF75F1DF4185800382558 /* GivUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF75E1DF4185800382558 /* GivUITests.swift */; };
 		9DDEF76D1DF41D1000382558 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF76C1DF41D1000382558 /* ThirdViewController.swift */; };
 		9DDEF76F1DF46ACB00382558 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF76E1DF46ACB00382558 /* FourthViewController.swift */; };
+		D283AA9524B6CC2FEE1AF5CF /* Pods_Giv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 206CF447BF1E5246A753A098 /* Pods_Giv.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		206CF447BF1E5246A753A098 /* Pods_Giv.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Giv.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D2022EA1DF6DFF3008843E6 /* ViewCharityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCharityTableViewController.swift; sourceTree = "<group>"; };
 		9D2022EC1DF754C7008843E6 /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		9D2022EE1DF7564D008843E6 /* SF-Compact-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-Regular.otf"; sourceTree = "<group>"; };
@@ -62,6 +64,8 @@
 		9DDEF7601DF4185800382558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DDEF76C1DF41D1000382558 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		9DDEF76E1DF46ACB00382558 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		E555111261EFFCB8273976DD /* Pods-Giv.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Giv.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Giv/Pods-Giv.debug.xcconfig"; sourceTree = "<group>"; };
+		FE5199B30673692586484DB5 /* Pods-Giv.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Giv.release.xcconfig"; path = "Pods/Target Support Files/Pods-Giv/Pods-Giv.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D283AA9524B6CC2FEE1AF5CF /* Pods_Giv.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +94,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4490C6459814801B6E8BF48E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E555111261EFFCB8273976DD /* Pods-Giv.debug.xcconfig */,
+				FE5199B30673692586484DB5 /* Pods-Giv.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4D9B371887E81A92FCBEE1B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				206CF447BF1E5246A753A098 /* Pods_Giv.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9DDEF7301DF4185700382558 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +118,8 @@
 				9DDEF7521DF4185800382558 /* GivTests */,
 				9DDEF75D1DF4185800382558 /* GivUITests */,
 				9DDEF73A1DF4185800382558 /* Products */,
+				4490C6459814801B6E8BF48E /* Pods */,
+				4D9B371887E81A92FCBEE1B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9DDEF7631DF4185800382558 /* Build configuration list for PBXNativeTarget "Giv" */;
 			buildPhases = (
+				22446606CDD7E09A490297E3 /* [CP] Check Pods Manifest.lock */,
 				9DDEF7351DF4185700382558 /* Sources */,
 				9DDEF7361DF4185700382558 /* Frameworks */,
 				9DDEF7371DF4185700382558 /* Resources */,
+				7394EB2A32519F6437E90751 /* [CP] Embed Pods Frameworks */,
+				8056F40F2CE833C72DB2E1D5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -276,6 +303,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22446606CDD7E09A490297E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7394EB2A32519F6437E90751 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Giv/Pods-Giv-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8056F40F2CE833C72DB2E1D5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Giv/Pods-Giv-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9DDEF7351DF4185700382558 /* Sources */ = {
@@ -440,6 +515,7 @@
 		};
 		9DDEF7641DF4185800382558 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E555111261EFFCB8273976DD /* Pods-Giv.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Giv/Info.plist;
@@ -452,6 +528,7 @@
 		};
 		9DDEF7651DF4185800382558 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE5199B30673692586484DB5 /* Pods-Giv.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Giv/Info.plist;

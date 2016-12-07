@@ -1,5 +1,6 @@
 import UIKit
 import WebKit
+import Alamofire
 
 class LinkViewController: UIViewController, WKNavigationDelegate {
     
@@ -40,12 +41,12 @@ class LinkViewController: UIViewController, WKNavigationDelegate {
     // generateLinkInitializationURL :: create the link.html url with query parameters
     func generateLinkInitializationURL() -> String {
         let config = [
-            "key": "test_key",
+            "key": "3d6c619bf17bdcf1580482a5764bbc",
             "product": "connect",
             "longtail": "true",
             "selectAccount": "true",
             "env": "tartan",
-            "clientName": "Test App",
+            "clientName": "Giv",
             "webhook": "https://requestb.in",
             "isMobile": "true",
             "isWebview": "true"
