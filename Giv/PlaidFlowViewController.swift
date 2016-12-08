@@ -16,7 +16,7 @@ class PlaidFlowViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        auth.fetchData()
+//        auth.fetchData()
         // Do any additional setup after loading the view.
     }
 

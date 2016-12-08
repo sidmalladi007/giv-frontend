@@ -7,21 +7,32 @@
 //
 
 import UIKit
+import Alamofire
 
 class FourthViewController: UIViewController {
     
     let auth = Auth()
-    let jwt_token = ""
+    var jwt = ""
     
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+        showUserInfo()
+    }
+    
+    func showUserInfo() {
         
-        jwt_token = auth.fetchData()
+        let urlString = "http://128.237.162.142:3000/api/auth/login"
         
-        auth.showUserInfo(jwt_token)
+        let parameters: Parameters = [
+            "email": "ranika@kejriwal.com",
+            "password": "test",
+            "firstName": "Ranika",
+            "lastName" : "Kejriwal"
+        ]
         
-        // Do any additional setup after loading the view, typically from a nib.
+        Alamofire.request(urlString, method: .post, parameters: parameters, encoding: URLEncoding.default).responseString {
+            (AlamofireResponse) in print(AlamofireResponse.result.value!)
+        }
     }
     
     override func didReceiveMemoryWarning() {
