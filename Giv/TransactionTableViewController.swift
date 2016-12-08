@@ -64,9 +64,6 @@ class TransactionTableViewController: UITableViewController {
         let cell = self.tableView.dequeueReusableCell(withIdentifier:"TransactionViewCell", for: indexPath) as! TransactionViewCell
         
         let row = indexPath.row
-        cell.transactionCompany.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.headline)
-        cell.transactionCharge.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.headline)
-        cell.transactionSum.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.headline)
         
         cell.transactionCompany.text = transactionNames[row]
         cell.transactionCharge.text = transactionCharges[row]
