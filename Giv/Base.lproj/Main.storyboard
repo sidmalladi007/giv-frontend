@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -26,40 +27,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="blue_wallpaper-1" translatesAutoresizingMaskIntoConstraints="NO" id="KK1-ko-Ucz">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue_wallpaper-1" translatesAutoresizingMaskIntoConstraints="NO" id="KK1-ko-Ucz">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gdh-MM-FvF">
-                                <rect key="frame" x="-4" y="281" width="383" height="86"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gdh-MM-FvF">
+                                <rect key="frame" x="-4" y="167" width="383" height="86"/>
                                 <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="18"/>
                                 <state key="normal" image="Group 4@1x"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4Z-4V-XRA">
-                                <rect key="frame" x="23" y="389" width="329" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="18"/>
-                                <state key="normal" image="user_prof_reset_credit_card"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Cs-SU-WTU">
-                                <rect key="frame" x="-4" y="187" width="383" height="86"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Cs-SU-WTU">
+                                <rect key="frame" x="-4" y="61" width="383" height="86"/>
                                 <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="18"/>
                                 <state key="normal" image="view credit cards"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4Z-4V-XRA">
+                                <rect key="frame" x="23" y="278" width="329" height="63"/>
+                                <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="18"/>
+                                <state key="normal" image="user_prof_reset_credit_card"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="KK1-ko-Ucz" firstAttribute="top" secondItem="tXZ-IG-K0d" secondAttribute="top" id="58S-2H-5Cy"/>
+                            <constraint firstItem="Gdh-MM-FvF" firstAttribute="centerX" secondItem="0Cs-SU-WTU" secondAttribute="centerX" id="5cG-PS-Blo"/>
+                            <constraint firstItem="Pe5-1R-W5f" firstAttribute="top" secondItem="KK1-ko-Ucz" secondAttribute="bottom" id="7hD-WZ-oU7"/>
+                            <constraint firstItem="N4Z-4V-XRA" firstAttribute="centerX" secondItem="Gdh-MM-FvF" secondAttribute="centerX" id="7pm-c9-EbB"/>
+                            <constraint firstItem="0Cs-SU-WTU" firstAttribute="centerX" secondItem="KK1-ko-Ucz" secondAttribute="centerX" id="9u7-sF-kmZ"/>
+                            <constraint firstItem="Gdh-MM-FvF" firstAttribute="leading" secondItem="tXZ-IG-K0d" secondAttribute="leadingMargin" constant="-20" id="CS5-QJ-j90"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0Cs-SU-WTU" secondAttribute="trailing" constant="-20" id="FOa-Is-xM9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Gdh-MM-FvF" secondAttribute="trailing" constant="-20" id="PFy-FZ-qCt"/>
+                            <constraint firstAttribute="trailing" secondItem="KK1-ko-Ucz" secondAttribute="trailing" id="Rgw-nc-TEC"/>
+                            <constraint firstItem="N4Z-4V-XRA" firstAttribute="leading" secondItem="tXZ-IG-K0d" secondAttribute="leadingMargin" constant="7" id="Syp-Ch-Hh9"/>
+                            <constraint firstItem="KK1-ko-Ucz" firstAttribute="leading" secondItem="tXZ-IG-K0d" secondAttribute="leading" id="bAZ-rV-q7B"/>
                             <constraint firstItem="KK1-ko-Ucz" firstAttribute="centerY" secondItem="tXZ-IG-K0d" secondAttribute="centerY" constant="-24.5" id="obW-5F-yRe"/>
+                            <constraint firstItem="0Cs-SU-WTU" firstAttribute="leading" secondItem="tXZ-IG-K0d" secondAttribute="leadingMargin" constant="-20" id="wkq-a6-Fzw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="N4Z-4V-XRA" secondAttribute="trailing" constant="7" id="x0s-I9-Qzq"/>
                             <constraint firstItem="KK1-ko-Ucz" firstAttribute="centerX" secondItem="tXZ-IG-K0d" secondAttribute="centerX" id="xgZ-V2-HnE"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="Info Icon" id="3TV-Ae-qcX"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gear" id="3TV-Ae-qcX"/>
                     <navigationItem key="navigationItem" title="USER PROFILE | SETTINGS" id="ItY-bz-1eO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ja9-O8-KSq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2938" y="1106"/>
+            <point key="canvasLocation" x="2938" y="1197"/>
         </scene>
         <!--Landing View Controller-->
         <scene sceneID="rbm-kr-2G3">
@@ -164,6 +175,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="buttonClickedWithSender:" destination="9f0-PX-D0w" eventType="touchUpInside" id="8cN-gg-3E3"/>
                                     <segue destination="9kZ-ZC-n25" kind="push" id="6o5-5c-ne8"/>
                                 </connections>
                             </button>
@@ -252,6 +264,7 @@
                         <outlet property="first_name" destination="sXa-xg-6K9" id="dMT-Uq-nyW"/>
                         <outlet property="last_name" destination="D3l-Pk-Ewp" id="8JJ-nd-HWi"/>
                         <outlet property="password" destination="1lW-xD-imx" id="YGO-tM-nbg"/>
+                        <outlet property="roleSwitch" destination="cO7-8o-bbQ" id="WwA-Te-Aqa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cUC-oh-7ZC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -385,8 +398,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue_wallpaper-1" translatesAutoresizingMaskIntoConstraints="NO" id="Zr4-yE-r2o">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue_wallpaper-1" translatesAutoresizingMaskIntoConstraints="NO" id="64n-pw-Fx9">
+                                <rect key="frame" x="3" y="0.0" width="375" height="618"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GIV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HkK-LE-hLN">
@@ -404,7 +417,7 @@
                                     <action selector="saveJTW:" destination="C7T-2x-kwK" eventType="touchUpInside" id="GTk-t5-EGg"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CURRENT BALANCE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLC-fg-gPO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YOUR SPARE CHANGE " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLC-fg-gPO">
                                 <rect key="frame" x="59" y="272" width="256" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="25"/>
@@ -431,41 +444,49 @@
         <scene sceneID="btj-P6-vpn">
             <objects>
                 <tableViewController title="Transactions" id="88s-nZ-xO2" customClass="TransactionTableViewController" customModule="Giv" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="CW6-ay-eq8">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="83" sectionHeaderHeight="28" sectionFooterHeight="28" id="CW6-ay-eq8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TransactionViewCell" id="c0E-oa-GI8" customClass="TransactionViewCell" customModule="Giv" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TransactionViewCell" rowHeight="83" id="c0E-oa-GI8" customClass="TransactionViewCell" customModule="Giv" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="83"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c0E-oa-GI8" id="MXc-pw-Cq0">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="82"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Company" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNY-0E-5oD">
-                                            <rect key="frame" x="0.0" y="0.0" width="96" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Charge" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8B-Fh-skm">
+                                            <rect key="frame" x="47" y="47" width="96" height="22"/>
                                             <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Charge" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8B-Fh-skm">
-                                            <rect key="frame" x="0.0" y="22" width="96" height="22"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="18"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwl-cZ-yWM">
+                                            <rect key="frame" x="198" y="0.0" width="177" height="82"/>
+                                            <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="40"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwl-cZ-yWM">
-                                            <rect key="frame" x="199" y="2" width="177" height="40"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Company" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNY-0E-5oD">
+                                            <rect key="frame" x="47" y="8" width="161" height="21"/>
                                             <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="uNY-0E-5oD" firstAttribute="centerY" secondItem="MXc-pw-Cq0" secondAttribute="centerY" id="EVb-pd-2WE"/>
+                                        <constraint firstItem="rwl-cZ-yWM" firstAttribute="leading" secondItem="N8B-Fh-skm" secondAttribute="trailing" constant="55" id="4rz-KE-ZlS"/>
+                                        <constraint firstItem="rwl-cZ-yWM" firstAttribute="leading" secondItem="uNY-0E-5oD" secondAttribute="trailing" constant="55" id="B6f-yw-59b"/>
+                                        <constraint firstItem="rwl-cZ-yWM" firstAttribute="top" secondItem="MXc-pw-Cq0" secondAttribute="top" id="HFg-yF-4f3"/>
+                                        <constraint firstAttribute="bottom" secondItem="rwl-cZ-yWM" secondAttribute="bottom" id="JBw-pF-Ojl"/>
+                                        <constraint firstItem="rwl-cZ-yWM" firstAttribute="leading" secondItem="N8B-Fh-skm" secondAttribute="trailing" constant="55" id="SQj-mj-OaJ"/>
+                                        <constraint firstItem="N8B-Fh-skm" firstAttribute="leading" secondItem="MXc-pw-Cq0" secondAttribute="leadingMargin" constant="39" id="TW9-rw-Omr"/>
+                                        <constraint firstAttribute="trailing" secondItem="rwl-cZ-yWM" secondAttribute="trailing" id="aus-IA-it9"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="N8B-Fh-skm" secondAttribute="bottom" constant="5" id="iFJ-O2-iis"/>
+                                        <constraint firstItem="N8B-Fh-skm" firstAttribute="top" secondItem="uNY-0E-5oD" secondAttribute="bottom" constant="14" id="nko-HL-s9Q"/>
+                                        <constraint firstItem="uNY-0E-5oD" firstAttribute="top" secondItem="MXc-pw-Cq0" secondAttribute="topMargin" constant="4" id="taa-G7-ZwD"/>
+                                        <constraint firstItem="uNY-0E-5oD" firstAttribute="leading" secondItem="MXc-pw-Cq0" secondAttribute="leadingMargin" constant="39" id="txA-1r-d6C"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -480,11 +501,11 @@
                             <outlet property="delegate" destination="88s-nZ-xO2" id="ijc-i8-ZOV"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Transactions" image="Info Icon" id="Fza-hI-QYZ"/>
+                    <tabBarItem key="tabBarItem" title="Spare Change" image="coin-stack" id="4RV-p4-SJr"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="97S-IN-4CI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2492.5" y="1104.5"/>
+            <point key="canvasLocation" x="2493" y="1154"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -510,7 +531,7 @@
         <scene sceneID="x1L-wW-0vH">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="y31-0t-n4X" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="Info Icon" id="8QC-El-3MO"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home Icon" id="8QC-El-3MO"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="qHM-jT-42e">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -528,8 +549,9 @@
     </scenes>
     <resources>
         <image name="Group 4@1x" width="329" height="63"/>
-        <image name="Info Icon" width="22" height="22"/>
+        <image name="Home Icon" width="27" height="26"/>
         <image name="blue_wallpaper-1" width="1080" height="1920"/>
+        <image name="coin-stack" width="32" height="32"/>
         <image name="coin-stack (1)" width="512" height="512"/>
         <image name="donate_init" width="263" height="58"/>
         <image name="gear" width="21" height="21"/>

@@ -12,8 +12,8 @@ import Alamofire
 class TransactionTableViewController: UITableViewController {
     
     var transactionNames = [String]()
-    var transactionCharges = [Float]()
-    var transactionSums = [Float]()
+    var transactionCharges = [String]()
+    var transactionSums = [String]()
     
 //    let auth = Auth()
     
@@ -28,8 +28,8 @@ class TransactionTableViewController: UITableViewController {
                             "CVS",
                             "GALLO"]
         
-        transactionCharges = [2.15, 2.50, 3.81, 1.91, 1.99]
-        transactionSums    = [0.85, 0.50, 0.19, 0.09, 0.01]
+        transactionCharges = ["2.15", "2.50", "3.81", "1.91", "1.90"]
+        transactionSums    = ["0.85", "0.50", "0.19", "0.09", "0.01"]
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -54,10 +54,10 @@ class TransactionTableViewController: UITableViewController {
         return transactionNames.count
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
-    {
-        return 100.0;//Choose your custom row height
-    }
+//    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
+//    {
+//        return 200.0;//Choose your custom row height
+//    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         

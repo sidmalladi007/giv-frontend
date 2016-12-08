@@ -9,17 +9,20 @@
 import UIKit
 
 class RegisterViewController: UIViewController {
+    
+    let auth = Auth()
+    var role = "Donor"
+    
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var first_name: UITextField!
     @IBOutlet weak var last_name: UITextField!
-
-
+    @IBOutlet var roleSwitch: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        roleSwitch.addTarget(self, action: Selector(("stateChanged:")), for: UIControlEvents.valueChanged)
+            // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,6 +30,23 @@ class RegisterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func stateChanged(switchState: UISwitch) {
+        if switchState.isOn {
+            role = "Donor"
+        } else {
+            role = "Charity"
+        }
+        print(role)
+    }
+    
+    @IBAction func buttonClicked(sender: UIButton) {
+        print(role)
+        print(email.text)
+        print(password.text)
+        print(first_name.text)
+        print(last_name.text)
+       
+        }
 
     /*
     // MARK: - Navigation
