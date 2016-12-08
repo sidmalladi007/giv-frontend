@@ -12,24 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let dataManager = DataManager()
-    
-//    func saveData() {
-////        let controller = window!.rootViewController as! FourthViewController
-//        dataManager.jtw = controller.jwt_token_key
-//        dataManager.saveJTW()
-//    }
-//    
-//    /**
-//     Uses the dataManager instance to load contacts from a plist and add to the ContactsController
-//     */
-//    func restoreData() {
-//        dataManager.loadJTW()
-//        let controller = window!.rootViewController as! FourthViewController
-//        controller.jwt_token_key = dataManager.jtw
-//    }
-//    
-    
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         return true
     }

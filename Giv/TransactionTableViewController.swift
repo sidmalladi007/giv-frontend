@@ -24,21 +24,19 @@ class TransactionTableViewController: UITableViewController {
         
 //        auth.fetchUserTransactions()
         
-        transactionNames = ["Taco Bell",
+        transactionNames = ["TACO BELL",
                             "ABP",
-                            "Entropy ",
+                            "ENTROPY ",
+                            "CVS",
+                            "GALLO", "TACO BELL",
+                            "ABP",
+                            "ENTROPY ",
                             "CVS",
                             "GALLO"]
         
-        transactionCharges = ["2.15", "2.50", "3.81", "1.91", "1.90"]
-        transactionSums    = ["0.85", "0.50", "0.19", "0.09", "0.01"]
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-    }
+        transactionCharges = ["2.15", "2.50", "3.81", "1.91", "1.90", "2.15", "2.50", "3.81", "1.91", "1.90"]
+        transactionSums    = ["0.85", "0.50", "0.19", "0.09", "0.01", "0.85", "0.50", "0.19", "0.09", "0.01"]
+        }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -56,18 +54,15 @@ class TransactionTableViewController: UITableViewController {
         return transactionNames.count
     }
     
-    
-    
-//    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
-//    {
-//        return 200.0;//Choose your custom row height
-//    }
-    
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = self.tableView.dequeueReusableCell(withIdentifier:"TransactionViewCell", for: indexPath) as! TransactionViewCell
         
         let row = indexPath.row
+        
+        cell.layer.borderWidth = 1.5
+        cell.layer.borderColor = UIColor.white.cgColor
                 
         cell.transactionCompany.text = transactionNames[row]
         cell.transactionCharge.text = transactionCharges[row]

@@ -15,24 +15,24 @@ class Auth {
     var dataManager = DataManager()
     var jwt_token = ""
     
-    func fetchData() {
+    func createUser(first_name: String, last_name:String, email:String, password:String, role:String ) {
+        let urlString = "http://128.237.165.19:3000/api/auth/register"
         
-        print("hit in fetchdata")
-        
-        
-        let urlString = "http://128.237.162.142:3000/api/auth/register"
         let parameters: Parameters = [
-            "email": "vasd@kejriwal.com",
-            "password": "test",
-            "firstName": "Ranika",
-            "lastName" : "Kejriwal"
+            "email": email,
+            "password": password,
+            "firstName": first_name,
+            "lastName" : last_name,
+            "role" : role
         ]
         
         Alamofire.request(urlString, method: .post, parameters: parameters, encoding: URLEncoding.default).responseJSON { response in
             if let JSON = response.result.value {
                 let JSONResponse = JSON as! NSDictionary
                     let token = JSONResponse["token"]!
-                    print(token)
+                    self.jwt_token = token as! String
+                    print(self.jwt_token)
+                    print("jwt_token")
                     }
                 }
             }

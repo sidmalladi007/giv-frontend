@@ -15,36 +15,10 @@ class FourthViewController: UIViewController {
     
     
     var jwt_token_key = "jwt_token"
-    var dataManager = DataManager()
     
-    @IBAction func saveJTW(_ sender: AnyObject) {
-//        dataManager.saveJTW()
-    }
-    
+
     override func viewDidLoad() {
-        super.viewDidLoad()
-//        dataManager.loadJTW()
-        
-        
-        //        auth.fetchData()
-        
-        
-//        if let plist = Plist(name: "MyData") {
-//            //2
-//            let dict = plist.getMutablePlistFile()!
-//            dict[jwt_token_key] = "akash"
-//            //3
-//            do {
-//                try plist.addValuesToPlistFile(dictionary: dict)
-//            } catch {
-//                print(error)
-//            }
-//            //4
-//            print(plist.getValuesInPlistFile())
-//        } else {
-//            print("Unable to get Plist")
-//        }
-        
+        super.viewDidLoad()        
     }
     
     override func didReceiveMemoryWarning() {

@@ -51,7 +51,6 @@ class DataManager {
     }
     
     func dataFilePath() -> String {
-//        return documentsDirectory().stringByAppendingPathComponent("Locations.plist")
         return documentsDirectory().stringByAppendingPathComponent("Sessions.plist")
     }
     
