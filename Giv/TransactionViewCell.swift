@@ -10,6 +10,9 @@ import UIKit
 
 class TransactionViewCell: UITableViewCell {
     @IBOutlet weak var transactionCompany: UILabel!
+    @IBOutlet weak var transactionCharge: UILabel!
+    @IBOutlet weak var transactionSum: UILabel!
+
 
     override func awakeFromNib() {
         super.awakeFromNib()
