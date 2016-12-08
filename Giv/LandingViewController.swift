@@ -8,6 +8,8 @@
 
 import UIKit
 
+var global_jwt = "akash"
+
 class LandingViewController: UIViewController {
 
     override func viewDidLoad() {

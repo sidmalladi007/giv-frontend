@@ -36,12 +36,12 @@ class DataManager {
     
     var jtw = "akash"
     
-    init() {
-//        loadJTW()
-        print("Documents folder is \(documentsDirectory())\n")
-        print("Data file path is \(dataFilePath())")
-    }
-    
+//    init() {
+////        loadJTW()
+//        print("Documents folder is \(documentsDirectory())\n")
+//        print("Data file path is \(dataFilePath())")
+//    }
+//    
     
     // MARK: - Data Location Methods
     

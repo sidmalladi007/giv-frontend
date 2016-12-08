@@ -37,13 +37,12 @@ class Auth {
                 }
             }
 
-        // return JSON response
     func getUserTransactions() {
         
         let urlString = ""
         
         let headers: HTTPHeaders = [
-            "Authorization": jwt_token,
+            "Authorization": global_jwt,
             "Accept": "application/json"
         ]
         

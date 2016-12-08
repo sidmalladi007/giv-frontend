@@ -11,6 +11,7 @@ import Alamofire
 
 class TransactionTableViewController: UITableViewController {
     
+    let auth = Auth()
     var transactionNames = [String]()
     var transactionCharges = [String]()
     var transactionSums = [String]()
@@ -19,6 +20,7 @@ class TransactionTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        auth.getUserTransactions()
         
         tableView.backgroundView = UIImageView(image: UIImage(named: "blue_wallpaper-1"))
         
