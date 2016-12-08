@@ -20,6 +20,8 @@ class TransactionTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.backgroundView = UIImageView(image: UIImage(named: "blue_wallpaper-1"))
+        
 //        auth.fetchUserTransactions()
         
         transactionNames = ["Taco Bell",
@@ -54,6 +56,8 @@ class TransactionTableViewController: UITableViewController {
         return transactionNames.count
     }
     
+    
+    
 //    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
 //    {
 //        return 200.0;//Choose your custom row height
@@ -64,7 +68,7 @@ class TransactionTableViewController: UITableViewController {
         let cell = self.tableView.dequeueReusableCell(withIdentifier:"TransactionViewCell", for: indexPath) as! TransactionViewCell
         
         let row = indexPath.row
-        
+                
         cell.transactionCompany.text = transactionNames[row]
         cell.transactionCharge.text = transactionCharges[row]
         cell.transactionSum.text = transactionSums[row]
