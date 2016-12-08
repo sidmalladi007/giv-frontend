@@ -11,10 +11,16 @@ import UIKit
 class FourthViewController: UIViewController {
     
     let auth = Auth()
+    let jwt_token = ""
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(auth.fetchData())
+        
+        jwt_token = auth.fetchData()
+        
+        auth.showUserInfo(jwt_token)
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
     
