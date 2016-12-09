@@ -76,7 +76,23 @@ class Auth {
             if let JSON = response.result.value {
                 let JSONResponse = JSON as! NSDictionary
                 let outcome = JSONResponse["result"]!
-                print("outcome")
+                print("outcome connectCallback")
+                print(outcome)
+            }
+        }
+    }
+    
+    func authCallback(publicToken: String) {
+        let urlString = "http://128.237.165.19:3000/api/oauth/plaidauthcallback?public_token=" + publicToken
+        let headers: HTTPHeaders = [
+            "Authorization": PlistManager.sharedInstance.getValueForKey(key: "token")! as! String,
+            "Accept": "application/json"
+        ]
+        Alamofire.request(urlString, method: .post, encoding: URLEncoding.default, headers: headers).responseJSON { response in
+            if let JSON = response.result.value {
+                let JSONResponse = JSON as! NSDictionary
+                let outcome = JSONResponse["result"]!
+                print("outcome authCallBack")
                 print(outcome)
             }
         }
@@ -93,7 +109,10 @@ class Auth {
         Alamofire.request(urlString, method: .get, parameters: nil, encoding: URLEncoding.default, headers: headers).responseJSON { response in
             if let JSON = response.result.value {
                 let JSONResponse = JSON as! NSDictionary
+                print("JSON BELOW")
+                print(JSON)
             }
+            
         }
 
     }

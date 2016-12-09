@@ -6,6 +6,7 @@ class PlaidViewController: UIViewController, WKNavigationDelegate {
     
     @IBOutlet var containerView : UIView? = nil
     
+    let auth = Auth()
     var webView: WKWebView!
     
     override func loadView() {
@@ -41,8 +42,8 @@ class PlaidViewController: UIViewController, WKNavigationDelegate {
     // generateLinkInitializationURL :: create the link.html url with query parameters
     func generateLinkInitializationURL() -> String {
         let config = [
-//            "key": "3e5986e00a2b17261c3384a8c3e274",
-            "key": "test_key",
+            "key": "3e5986e00a2b17261c3384a8c3e274",
+//            "key": "test_key",
             "product": "auth",
             "longtail": "true",
             "selectAccount": "true",
@@ -76,7 +77,7 @@ class PlaidViewController: UIViewController, WKNavigationDelegate {
             switch actionType {
                 
             case "connected"?:
-           
+                auth.authCallback(publicToken: queryParams["public_token"]!)
                 self.dismiss(animated: true, completion: nil)
                 
                 // Parse data passed from Link into a dictionary
