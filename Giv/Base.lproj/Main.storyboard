@@ -43,6 +43,9 @@
                                 <rect key="frame" x="-8" y="57" width="383" height="86"/>
                                 <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="18"/>
                                 <state key="normal" image="view_charity"/>
+                                <connections>
+                                    <segue destination="tc4-w4-FD1" kind="modal" id="66l-bh-AGM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQz-8d-gKo">
                                 <rect key="frame" x="-8" y="245" width="383" height="86"/>
@@ -91,22 +94,40 @@
             </objects>
             <point key="canvasLocation" x="4127" y="1213"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Charities-->
         <scene sceneID="hMZ-VR-jLb">
             <objects>
-                <tableViewController id="tc4-w4-FD1" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="nLd-bZ-xjU">
+                <tableViewController title="Charities" id="tc4-w4-FD1" customClass="CharityTableViewController" customModule="Giv" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="92" sectionHeaderHeight="28" sectionFooterHeight="28" id="nLd-bZ-xjU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="pOx-Hd-dOc">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CharityViewCell" rowHeight="92" id="pOx-Hd-dOc" customClass="CharityViewCell" customModule="Giv" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="92"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pOx-Hd-dOc" id="nfX-pY-tjz">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="91"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHARITY NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBv-Kl-VGM">
+                                            <rect key="frame" x="22" y="22" width="329" height="46"/>
+                                            <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="28"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="uBv-Kl-VGM" firstAttribute="leading" secondItem="nfX-pY-tjz" secondAttribute="leadingMargin" constant="14" id="5bp-UB-A3H"/>
+                                        <constraint firstItem="uBv-Kl-VGM" firstAttribute="top" secondItem="nfX-pY-tjz" secondAttribute="topMargin" constant="14" id="Ddn-H2-7Sk"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="uBv-Kl-VGM" secondAttribute="trailing" constant="16" id="Qmj-4N-iVB"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="uBv-Kl-VGM" secondAttribute="bottom" constant="15" id="nbk-5l-RYI"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="charityName" destination="uBv-Kl-VGM" id="rUp-Si-luv"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -117,7 +138,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3kg-Wy-ePc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4586" y="1212"/>
+            <point key="canvasLocation" x="4585.5" y="1211.5"/>
         </scene>
         <!--Landing-->
         <scene sceneID="rbm-kr-2G3">
@@ -865,7 +886,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4126.5" y="255.5"/>
+            <point key="canvasLocation" x="4127" y="256"/>
         </scene>
         <!--Home-->
         <scene sceneID="x1L-wW-0vH">
@@ -884,7 +905,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zgb-hg-WUh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4564.5" y="255.5"/>
+            <point key="canvasLocation" x="4586" y="256"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="d2p-xi-Ody">

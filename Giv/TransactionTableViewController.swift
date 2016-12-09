@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Alamofire
 
 class TransactionTableViewController: UITableViewController {
     
@@ -20,11 +19,9 @@ class TransactionTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        auth.getUserTransactions()
+//        auth.getUserTransactions()
         
         tableView.backgroundView = UIImageView(image: UIImage(named: "blue_wallpaper-1"))
-        
-//        auth.fetchUserTransactions()
         
         transactionNames = ["TACO BELL",
                             "ABP",
