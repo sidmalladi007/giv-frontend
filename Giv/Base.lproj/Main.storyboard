@@ -409,8 +409,15 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMI-gm-gga">
+                                <rect key="frame" x="42" y="72" width="291" height="128"/>
+                                <string key="text">GIV connects  securely to your account's, rounds up spare change to the nearest dollar, and donates it to your favorite causes. </string>
+                                <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbT-BA-5Mq">
-                                <rect key="frame" x="55" y="532" width="265" height="47"/>
+                                <rect key="frame" x="55" y="570" width="265" height="46"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="25"/>
                                 <state key="normal" title="CONNECT ACCOUNT">
@@ -420,30 +427,28 @@
                                     <segue destination="HJw-p1-WZk" kind="modal" id="n3a-2S-QB7"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMI-gm-gga">
-                                <rect key="frame" x="42" y="72" width="291" height="128"/>
-                                <string key="text">GIV connects  securely to your account's, rounds up spare change to the nearest dollar, and donates it to your favorite causes. </string>
-                                <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ygr-1p-Kzx" firstAttribute="top" secondItem="KbT-BA-5Mq" secondAttribute="bottom" constant="88" id="22z-VR-bbh"/>
                             <constraint firstItem="ygr-1p-Kzx" firstAttribute="top" secondItem="KbT-BA-5Mq" secondAttribute="bottom" constant="88" id="2iw-zC-hEP"/>
-                            <constraint firstItem="awQ-Gt-xLl" firstAttribute="top" secondItem="QMI-gm-gga" secondAttribute="bottom" constant="40" id="Cfv-wX-ifE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="awQ-Gt-xLl" secondAttribute="trailing" constant="26" id="86r-nn-TPk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KbT-BA-5Mq" secondAttribute="trailing" constant="39" id="9W4-SI-zdm"/>
+                            <constraint firstItem="QMI-gm-gga" firstAttribute="leading" secondItem="pBi-zZ-nP1" secondAttribute="leadingMargin" constant="26" id="Fiy-Db-WuW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QMI-gm-gga" secondAttribute="trailing" constant="26" id="HA8-Qj-GLc"/>
+                            <constraint firstItem="awQ-Gt-xLl" firstAttribute="top" secondItem="QMI-gm-gga" secondAttribute="bottom" constant="40" id="Hp2-7A-OJL"/>
                             <constraint firstItem="ygr-1p-Kzx" firstAttribute="top" secondItem="P3t-h9-aW6" secondAttribute="bottom" id="Ior-0v-emX"/>
-                            <constraint firstItem="QMI-gm-gga" firstAttribute="top" secondItem="Gl6-uC-IVF" secondAttribute="bottom" constant="8" id="J6g-JS-rqQ"/>
-                            <constraint firstItem="KbT-BA-5Mq" firstAttribute="top" secondItem="awQ-Gt-xLl" secondAttribute="bottom" constant="38" id="Ki9-Fb-oC5"/>
                             <constraint firstAttribute="trailing" secondItem="P3t-h9-aW6" secondAttribute="trailing" id="PR5-Tm-RkN"/>
-                            <constraint firstItem="awQ-Gt-xLl" firstAttribute="centerY" secondItem="pBi-zZ-nP1" secondAttribute="centerY" id="QUS-ED-tLT"/>
                             <constraint firstAttribute="trailingMargin" secondItem="KbT-BA-5Mq" secondAttribute="trailing" constant="39" id="RbG-r7-tck"/>
-                            <constraint firstItem="awQ-Gt-xLl" firstAttribute="centerX" secondItem="pBi-zZ-nP1" secondAttribute="centerX" id="ZvU-ox-gDT"/>
+                            <constraint firstItem="KbT-BA-5Mq" firstAttribute="leading" secondItem="pBi-zZ-nP1" secondAttribute="leadingMargin" constant="39" id="U0p-73-uwx"/>
+                            <constraint firstItem="KbT-BA-5Mq" firstAttribute="top" secondItem="awQ-Gt-xLl" secondAttribute="bottom" constant="76" id="WAd-X1-Pfp"/>
+                            <constraint firstItem="awQ-Gt-xLl" firstAttribute="leading" secondItem="pBi-zZ-nP1" secondAttribute="leadingMargin" constant="26" id="ZY5-zJ-MDd"/>
                             <constraint firstItem="KbT-BA-5Mq" firstAttribute="leading" secondItem="pBi-zZ-nP1" secondAttribute="leadingMargin" constant="39" id="ftk-iJ-AAQ"/>
-                            <constraint firstItem="QMI-gm-gga" firstAttribute="leading" secondItem="pBi-zZ-nP1" secondAttribute="leadingMargin" constant="26" id="mLj-eY-MMH"/>
+                            <constraint firstItem="QMI-gm-gga" firstAttribute="top" secondItem="Gl6-uC-IVF" secondAttribute="bottom" constant="8" id="knK-WM-oAz"/>
                             <constraint firstItem="P3t-h9-aW6" firstAttribute="leading" secondItem="pBi-zZ-nP1" secondAttribute="leading" id="mVv-Mk-pDI"/>
+                            <constraint firstItem="awQ-Gt-xLl" firstAttribute="top" secondItem="QMI-gm-gga" secondAttribute="bottom" constant="40" id="pey-yo-XvR"/>
                             <constraint firstItem="P3t-h9-aW6" firstAttribute="top" secondItem="pBi-zZ-nP1" secondAttribute="top" id="poh-Vt-GL6"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="QMI-gm-gga" secondAttribute="trailing" constant="26" id="q8i-BB-dc1"/>
+                            <constraint firstItem="KbT-BA-5Mq" firstAttribute="top" secondItem="awQ-Gt-xLl" secondAttribute="bottom" constant="43" id="z40-ao-zOR"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" image="gear" id="pDg-9L-qo7"/>
@@ -473,10 +478,65 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="nNb-Rb-qZ8"/>
+                    <connections>
+                        <segue destination="CVd-42-Wl7" kind="modal" identifier="intermediate_auth" id="hRa-Qs-Xbj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vjF-VQ-DY8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4649" y="-448"/>
+            <point key="canvasLocation" x="4610" y="-450"/>
+        </scene>
+        <!--IntermediateAuthViewController-->
+        <scene sceneID="Vbq-nD-jC2">
+            <objects>
+                <viewController storyboardIdentifier="IntermediateAuthView" title="IntermediateAuthViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CVd-42-Wl7" customClass="IntermediateAuthViewController" customModule="Giv" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sjB-4f-4a7"/>
+                        <viewControllerLayoutGuide type="bottom" id="LcB-93-M4c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gxx-gV-N0m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue_wallpaper-1" translatesAutoresizingMaskIntoConstraints="NO" id="DWf-Vl-CKb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1q4-KY-Rgp">
+                                <rect key="frame" x="37" y="522" width="300" height="52"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="25"/>
+                                <state key="normal" title="AUTHORIZE ACCOUNT">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Tg6-ue-Cqh" kind="modal" id="ydq-Er-ZEg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Now to set up your funding source, please authorize account. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tip-b1-hgP">
+                                <rect key="frame" x="42" y="168" width="291" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration" identifier="IntermediateAuthViewController"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="DWf-Vl-CKb" secondAttribute="trailing" id="L0a-QM-938"/>
+                            <constraint firstItem="LcB-93-M4c" firstAttribute="top" secondItem="DWf-Vl-CKb" secondAttribute="bottom" id="brE-dY-1nk"/>
+                            <constraint firstItem="DWf-Vl-CKb" firstAttribute="leading" secondItem="Gxx-gV-N0m" secondAttribute="leading" id="dzQ-hx-Be4"/>
+                            <constraint firstItem="DWf-Vl-CKb" firstAttribute="top" secondItem="Gxx-gV-N0m" secondAttribute="top" id="mvc-2d-JdB"/>
+                            <constraint firstItem="1q4-KY-Rgp" firstAttribute="leading" secondItem="Gxx-gV-N0m" secondAttribute="leadingMargin" constant="21" id="qY2-BD-TJm"/>
+                            <constraint firstItem="LcB-93-M4c" firstAttribute="top" secondItem="1q4-KY-Rgp" secondAttribute="bottom" constant="93" id="sks-gZ-Mca"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1q4-KY-Rgp" secondAttribute="trailing" constant="22" id="slL-WM-LmO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fUs-Fa-4Th"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zWV-3d-eU1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5064.5" y="-450.5"/>
         </scene>
         <!--Plaid View Controller-->
         <scene sceneID="T3u-Ve-UdH">
@@ -489,12 +549,19 @@
                     <view key="view" contentMode="scaleToFill" id="ACs-xl-qIi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue_wallpaper-1" translatesAutoresizingMaskIntoConstraints="NO" id="SgH-cB-gBM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Xg4-Gn-WbU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MU8-c6-Uk5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5393" y="-448"/>
+            <point key="canvasLocation" x="5546" y="-451"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ivz-ga-0wF">

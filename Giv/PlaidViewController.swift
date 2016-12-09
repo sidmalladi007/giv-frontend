@@ -41,7 +41,7 @@ class PlaidViewController: UIViewController, WKNavigationDelegate {
     // generateLinkInitializationURL :: create the link.html url with query parameters
     func generateLinkInitializationURL() -> String {
         let config = [
-            "key": "3d6c619bf17bdcf1580482a5764bbc",
+            "key": "test_key",
             "product": "auth",
             "longtail": "true",
             "selectAccount": "true",
@@ -76,7 +76,8 @@ class PlaidViewController: UIViewController, WKNavigationDelegate {
                 
             case "connected"?:
                 // Close the webview
-                self.dismiss(animated: true, completion: nil)
+//                print("before_segue inplaidview")
+//                self.dismiss(animated: true, completion: nil)
                 
                 // Parse data passed from Link into a dictionary
                 // This includes the public_token as well as account and institution metadata
@@ -84,6 +85,9 @@ class PlaidViewController: UIViewController, WKNavigationDelegate {
                 print("Account ID: \(queryParams["account_id"])");
                 print("Institution type: \(queryParams["institution_type"])");
                 print("Institution name: \(queryParams["institution_name"])");
+                
+             
+            
                 break
             case "exit"?:
                 // Close the webview

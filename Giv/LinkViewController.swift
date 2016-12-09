@@ -41,7 +41,7 @@ class LinkViewController: UIViewController, WKNavigationDelegate {
     // generateLinkInitializationURL :: create the link.html url with query parameters
     func generateLinkInitializationURL() -> String {
         let config = [
-            "key": "3d6c619bf17bdcf1580482a5764bbc",
+            "key": "test_key",
             "product": "connect",
             "longtail": "true",
             "selectAccount": "true",
@@ -74,8 +74,27 @@ class LinkViewController: UIViewController, WKNavigationDelegate {
         if (actionScheme == linkScheme) {
             switch actionType {
                 
+            
+                
             case "connected"?:
-                // Close the webview
+                
+                let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "IntermediateAuthView") as UIViewController
+                // .instantiatViewControllerWithIdentifier() returns AnyObject! this must be downcast to utilize it
+                
+                self.present(viewController, animated: false, completion: nil)
+                
+                
+//                guard let vc = UIStoryboard(name:"Main", bundle:nil).instantiateViewController(withIdentifier: "IntermediateAuthViewController") as? IntermediateAuthViewController else { print("Could not instantiate view controller with identifier of type SecondViewController");  return
+//                }
+//                
+//                self.navigationController?.pushViewController(vc, animated:true)
+
+                
+                print("before segue")
+                
+//                performSegue(withIdentifier: "intermediate_auth", sender: nil)
+
+                
                 self.dismiss(animated: true, completion: nil)
                 
                 // Parse data passed from Link into a dictionary
@@ -87,7 +106,12 @@ class LinkViewController: UIViewController, WKNavigationDelegate {
                 break
             case "exit"?:
                 // Close the webview
-                self.dismiss(animated: true, completion: nil)
+                
+                print("before segue inside linkview")
+                
+                
+                
+//                vc.resultsArray = self.resultsArray
                 
                 // Parse data passed from Link into a dictionary
                 // This includes information about where the user was in the Link flow
@@ -99,6 +123,9 @@ class LinkViewController: UIViewController, WKNavigationDelegate {
                 // the Link flow.
                 print("Link request ID: \(queryParams["link_request_id"])");
                 print("Plaid API request ID: \(queryParams["link_request_id"])");
+                
+                self.dismiss(animated: true, completion: nil)
+
                 break
                 
             default:

@@ -13,6 +13,7 @@
 		9D2022F41DF90ADF008843E6 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2022F31DF90ADF008843E6 /* Auth.swift */; };
 		9D2022F71DF92422008843E6 /* MyData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D2022F51DF92421008843E6 /* MyData.plist */; };
 		9D20A3DB1DFA2458004C3303 /* PlaidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20A3DA1DFA2458004C3303 /* PlaidViewController.swift */; };
+		9D20A3DD1DFA33F8004C3303 /* IntermediateAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20A3DC1DFA33F8004C3303 /* IntermediateAuthViewController.swift */; };
 		9D2484DE1DF9482B00235C9F /* Plist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2484DD1DF9482B00235C9F /* Plist.swift */; };
 		9D2484E01DF95B9900235C9F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2484DF1DF95B9900235C9F /* DataManager.swift */; };
 		9D56160B1DF9C15100823DBB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D56160A1DF9C15100823DBB /* RegisterViewController.swift */; };
@@ -55,6 +56,7 @@
 		9D2022F31DF90ADF008843E6 /* Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		9D2022F51DF92421008843E6 /* MyData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyData.plist; sourceTree = "<group>"; };
 		9D20A3DA1DFA2458004C3303 /* PlaidViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaidViewController.swift; sourceTree = "<group>"; };
+		9D20A3DC1DFA33F8004C3303 /* IntermediateAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntermediateAuthViewController.swift; sourceTree = "<group>"; };
 		9D2484DD1DF9482B00235C9F /* Plist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plist.swift; sourceTree = "<group>"; };
 		9D2484DF1DF95B9900235C9F /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		9D56160A1DF9C15100823DBB /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				9D56160A1DF9C15100823DBB /* RegisterViewController.swift */,
 				9D2022F11DF8EC4D008843E6 /* TransactionViewCell.swift */,
 				9D2022EF1DF7668C008843E6 /* LinkViewController.swift */,
+				9D20A3DC1DFA33F8004C3303 /* IntermediateAuthViewController.swift */,
 				9D20A3DA1DFA2458004C3303 /* PlaidViewController.swift */,
 				9DDEF76E1DF46ACB00382558 /* FourthViewController.swift */,
 				9D2022F31DF90ADF008843E6 /* Auth.swift */,
@@ -376,6 +379,7 @@
 				9D2022F41DF90ADF008843E6 /* Auth.swift in Sources */,
 				9D2484E01DF95B9900235C9F /* DataManager.swift in Sources */,
 				9DDEF7411DF4185800382558 /* TransactionTableViewController.swift in Sources */,
+				9D20A3DD1DFA33F8004C3303 /* IntermediateAuthViewController.swift in Sources */,
 				9D56160B1DF9C15100823DBB /* RegisterViewController.swift in Sources */,
 				9D2022F21DF8EC4D008843E6 /* TransactionViewCell.swift in Sources */,
 				9D2484DE1DF9482B00235C9F /* Plist.swift in Sources */,
