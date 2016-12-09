@@ -8,7 +8,7 @@
 
 import UIKit
 
-var global_jwt = "akash"
+var global_jwt = "global"
 
 class LandingViewController: UIViewController {
 

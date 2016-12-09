@@ -51,6 +51,9 @@ class Auth {
                 let JSONResponse = JSON as! NSDictionary
             }
         }
+    }
+    
+    func getCharities() {
         
     }
 
