@@ -16,6 +16,7 @@ class CharityTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         auth.getCharities()
         
         charityNames = ["UNICEF", "RED CROSS", "SUSAN KOMEN"]

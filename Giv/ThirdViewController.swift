@@ -23,4 +23,11 @@ class ThirdViewController: UIViewController {
     }
     
     
+    @IBAction func logout(sender: UIButton) {
+        // on logout, jwt is initialized to an empty string
+        // user is then redirected to home page
+        let token = "reset"
+        PlistManager.sharedInstance.saveValue(value: token as AnyObject, forKey: "token")
+    }
+    
 }

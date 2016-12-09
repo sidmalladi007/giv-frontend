@@ -99,6 +99,9 @@ class Auth {
     }
     
     func getCharities() {
+        
+        print("hit inside getCharity")
+        
         let urlString = "http://localhost:3000/api/listcharities"
         
         let headers: HTTPHeaders = [
