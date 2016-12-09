@@ -23,9 +23,9 @@ class CharityTableViewController: UITableViewController {
     
     func setCharity(_ charities: [String]) {
         let finalCharity = charities
-        print(finalCharity)
-        print("finalCharity above")
         self.charityNames = finalCharity
+        print(self.charityNames)
+        do_table_refresh()
     }
     
     
@@ -53,6 +53,10 @@ class CharityTableViewController: UITableViewController {
         
         cell.charityName.text = charityNames[row]
         return cell
+    }
+    
+    func do_table_refresh() {
+        self.tableView.reloadData()
     }
     
 }

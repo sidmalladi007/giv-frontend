@@ -100,7 +100,6 @@ class Auth {
     
     func getCharities(completion: @escaping ([String]) -> Void) {
         
-        
         let urlString = "http://128.237.165.19:3000/api/listcharities"
         
         let headers: HTTPHeaders = [
@@ -113,8 +112,6 @@ class Auth {
                 let JSONResponse = JSON as! NSDictionary
                 let list_charities = JSONResponse["charities"]!
                 completion((list_charities as! [String]))
-                
-                //                completion(list_charities)
             }
         }
     }
