@@ -5,6 +5,8 @@ import Alamofire
 class LinkViewController: UIViewController, WKNavigationDelegate {
     
     @IBOutlet var containerView : UIView? = nil
+    
+    let auth = Auth()
     var webView: WKWebView!
     
     override func loadView() {
@@ -40,7 +42,8 @@ class LinkViewController: UIViewController, WKNavigationDelegate {
     // generateLinkInitializationURL :: create the link.html url with query parameters
     func generateLinkInitializationURL() -> String {
         let config = [
-            "key": "test_key",
+//            "key": "test_key",
+            "key": "3e5986e00a2b17261c3384a8c3e274",
             "product": "connect",
             "longtail": "true",
             "selectAccount": "true",
@@ -74,22 +77,7 @@ class LinkViewController: UIViewController, WKNavigationDelegate {
             switch actionType {
             case "connected"?:
                 
-//                let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "IntermediateAuthView") as UIViewController
-                // .instantiatViewControllerWithIdentifier() returns AnyObject! this must be downcast to utilize it
-                
-//                self.present(viewController, animated: false, completion: nil)
-                
-                
-//                guard let vc = UIStoryboard(name:"Main", bundle:nil).instantiateViewController(withIdentifier: "IntermediateAuthViewController") as? IntermediateAuthViewController else { print("Could not instantiate view controller with identifier of type SecondViewController");  return
-//                }
-//                
-//                self.navigationController?.pushViewController(vc, animated:true)
-
-                
-//                print("before segue")
-                
-//                performSegue(withIdentifier: "intermediate_auth", sender: nil)
-
+                auth.connectCallback(publicToken: queryParams["public_token"]!)
                 
                 self.dismiss(animated: true, completion: nil)
                 

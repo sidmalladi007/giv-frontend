@@ -65,4 +65,20 @@ class Auth {
             }
         }
     }
+    
+    func connectCallback(publicToken: String) {
+        let urlString = "http://128.237.165.19:3000/api/oauth/plaidconnectcallback?public_token=" + publicToken
+        let headers: HTTPHeaders = [
+            "Authorization": PlistManager.sharedInstance.getValueForKey(key: "token")! as! String,
+            "Accept": "application/json"
+        ]
+        Alamofire.request(urlString, method: .post, encoding: URLEncoding.default, headers: headers).responseJSON { response in
+            if let JSON = response.result.value {
+                let JSONResponse = JSON as! NSDictionary
+                let outcome = JSONResponse["result"]!
+                print("outcome")
+                print(outcome)
+            }
+        }
+    }
 }
