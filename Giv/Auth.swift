@@ -8,12 +8,8 @@
 
 import Foundation
 import Alamofire
-//import SwiftyJSON
 
 class Auth {
-    
-    var dataManager = DataManager()
-    var jwt_token = ""
     
     func createUser(first_name: String, last_name:String, email:String, password:String, role:String ) {
         let urlString = "http://128.237.165.19:3000/api/auth/register"
@@ -30,9 +26,8 @@ class Auth {
             if let JSON = response.result.value {
                 let JSONResponse = JSON as! NSDictionary
                     let token = JSONResponse["token"]!
-                    self.jwt_token = token as! String
-                    print(self.jwt_token)
-                    print("jwt_token")
+                    print("jtw in auth")
+                    PlistManager.sharedInstance.saveValue(value: token as AnyObject, forKey: "token")
                     }
                 }
             }
@@ -42,7 +37,7 @@ class Auth {
         let urlString = ""
         
         let headers: HTTPHeaders = [
-            "Authorization": global_jwt,
+            "Authorization": PlistManager.sharedInstance.getValueForKey(key: "token")! as! String,
             "Accept": "application/json"
         ]
         

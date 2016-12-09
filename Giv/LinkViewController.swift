@@ -5,7 +5,6 @@ import Alamofire
 class LinkViewController: UIViewController, WKNavigationDelegate {
     
     @IBOutlet var containerView : UIView? = nil
-    
     var webView: WKWebView!
     
     override func loadView() {
@@ -16,7 +15,7 @@ class LinkViewController: UIViewController, WKNavigationDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+              
         // load the link url
         let linkUrl = generateLinkInitializationURL()
         let url = NSURL(string: linkUrl)
@@ -73,9 +72,6 @@ class LinkViewController: UIViewController, WKNavigationDelegate {
         
         if (actionScheme == linkScheme) {
             switch actionType {
-                
-            
-                
             case "connected"?:
                 
 //                let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "IntermediateAuthView") as UIViewController
