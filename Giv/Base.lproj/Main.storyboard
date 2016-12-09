@@ -509,7 +509,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vjF-VQ-DY8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4588" y="-466"/>
+            <point key="canvasLocation" x="4586" y="-453"/>
         </scene>
         <!--IntermediateAuthViewController-->
         <scene sceneID="Vbq-nD-jC2">
@@ -600,10 +600,10 @@
             </objects>
             <point key="canvasLocation" x="5545.5" y="-451.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="Ivz-ga-0wF">
             <objects>
-                <viewController id="6tu-n8-cc9" sceneMemberID="viewController">
+                <viewController id="6tu-n8-cc9" customClass="LoginViewController" customModule="Giv" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YLh-LO-iNp"/>
                         <viewControllerLayoutGuide type="bottom" id="86v-vV-eBx"/>
@@ -633,6 +633,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="buttonClickedWithSender:" destination="6tu-n8-cc9" eventType="touchUpInside" id="k1D-IP-1Ti"/>
                                     <segue destination="49e-Tb-3d3" kind="modal" id="Vzb-I0-k8R"/>
                                 </connections>
                             </button>
@@ -680,6 +681,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="RfM-Ej-SXH"/>
+                    <connections>
+                        <outlet property="email" destination="P0i-gY-LIw" id="QdY-7Z-C6c"/>
+                        <outlet property="password" destination="J9p-IS-QJm" id="Fni-Qo-EFY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GGy-50-vur" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

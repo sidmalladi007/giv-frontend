@@ -216,11 +216,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Giv/LinkViewController.swift"
-            timestampString = "502962089.969662"
+            timestampString = "502964099.080005"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "webView(_:decidePolicyForNavigationAction:decisionHandler:)"
             landmarkType = "7">
          </BreakpointContent>

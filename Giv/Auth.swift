@@ -26,7 +26,6 @@ class Auth {
             if let JSON = response.result.value {
                 let JSONResponse = JSON as! NSDictionary
                     let token = JSONResponse["token"]!
-                    print("jtw in auth")
                     PlistManager.sharedInstance.saveValue(value: token as AnyObject, forKey: "token")
                     }
                 }
@@ -48,8 +47,22 @@ class Auth {
         }
     }
     
-    func getCharities() {
+    func login(email:String, password:String) {
+        let urlString = "http://128.237.165.19:3000/api/auth/login"
         
+        let parameters: Parameters = [
+            "email": email,
+            "password": password,
+        ]
+        
+        Alamofire.request(urlString, method: .post, parameters: parameters, encoding: URLEncoding.default).responseJSON { response in
+            if let JSON = response.result.value {
+                let JSONResponse = JSON as! NSDictionary
+                let token = JSONResponse["token"]!
+                print("jtw token login")
+                print(token)
+                PlistManager.sharedInstance.saveValue(value: token as AnyObject, forKey: "token")
+            }
+        }
     }
-
 }

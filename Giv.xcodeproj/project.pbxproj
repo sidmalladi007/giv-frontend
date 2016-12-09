@@ -17,6 +17,7 @@
 		9D5FBA0E1DFA8D5600B52B93 /* CharityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5FBA0D1DFA8D5600B52B93 /* CharityTableViewController.swift */; };
 		9D5FBA101DFA939E00B52B93 /* PlistManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5FBA0F1DFA939E00B52B93 /* PlistManager.swift */; };
 		9D5FBA121DFA93C700B52B93 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D5FBA111DFA93C700B52B93 /* data.plist */; };
+		9D5FBA141DFA9CDE00B52B93 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5FBA131DFA9CDE00B52B93 /* LoginViewController.swift */; };
 		9DDEF73D1DF4185800382558 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF73C1DF4185800382558 /* AppDelegate.swift */; };
 		9DDEF73F1DF4185800382558 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF73E1DF4185800382558 /* FirstViewController.swift */; };
 		9DDEF7411DF4185800382558 /* TransactionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF7401DF4185800382558 /* TransactionTableViewController.swift */; };
@@ -60,6 +61,7 @@
 		9D5FBA0D1DFA8D5600B52B93 /* CharityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharityTableViewController.swift; sourceTree = "<group>"; };
 		9D5FBA0F1DFA939E00B52B93 /* PlistManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistManager.swift; sourceTree = "<group>"; };
 		9D5FBA111DFA93C700B52B93 /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
+		9D5FBA131DFA9CDE00B52B93 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9DDEF7391DF4185800382558 /* Giv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Giv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DDEF73C1DF4185800382558 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DDEF73E1DF4185800382558 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				9DDEF76C1DF41D1000382558 /* ThirdViewController.swift */,
 				9DDEF7401DF4185800382558 /* TransactionTableViewController.swift */,
 				9DDEF7421DF4185800382558 /* Main.storyboard */,
+				9D5FBA131DFA9CDE00B52B93 /* LoginViewController.swift */,
 				9D56160A1DF9C15100823DBB /* RegisterViewController.swift */,
 				9D2022F11DF8EC4D008843E6 /* TransactionViewCell.swift */,
 				9D5FBA0D1DFA8D5600B52B93 /* CharityTableViewController.swift */,
@@ -379,6 +382,7 @@
 				9D5FBA0E1DFA8D5600B52B93 /* CharityTableViewController.swift in Sources */,
 				9D2022F41DF90ADF008843E6 /* Auth.swift in Sources */,
 				9DDEF7411DF4185800382558 /* TransactionTableViewController.swift in Sources */,
+				9D5FBA141DFA9CDE00B52B93 /* LoginViewController.swift in Sources */,
 				9D20A3DD1DFA33F8004C3303 /* IntermediateAuthViewController.swift in Sources */,
 				9D56160B1DF9C15100823DBB /* RegisterViewController.swift in Sources */,
 				9D2022F21DF8EC4D008843E6 /* TransactionViewCell.swift in Sources */,
