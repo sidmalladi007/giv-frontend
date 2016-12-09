@@ -78,10 +78,10 @@ class LinkViewController: UIViewController, WKNavigationDelegate {
                 
             case "connected"?:
                 
-                let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "IntermediateAuthView") as UIViewController
+//                let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "IntermediateAuthView") as UIViewController
                 // .instantiatViewControllerWithIdentifier() returns AnyObject! this must be downcast to utilize it
                 
-                self.present(viewController, animated: false, completion: nil)
+//                self.present(viewController, animated: false, completion: nil)
                 
                 
 //                guard let vc = UIStoryboard(name:"Main", bundle:nil).instantiateViewController(withIdentifier: "IntermediateAuthViewController") as? IntermediateAuthViewController else { print("Could not instantiate view controller with identifier of type SecondViewController");  return
@@ -90,7 +90,7 @@ class LinkViewController: UIViewController, WKNavigationDelegate {
 //                self.navigationController?.pushViewController(vc, animated:true)
 
                 
-                print("before segue")
+//                print("before segue")
                 
 //                performSegue(withIdentifier: "intermediate_auth", sender: nil)
 
