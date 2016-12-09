@@ -23,11 +23,9 @@ class TransactionTableViewController: UITableViewController {
     var transactionCharges = [String]()
     var transactionSums = [String]()
     
-//    let auth = Auth()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-//        auth.getUserTransactions()
+        auth.getUserTransactions()
         
         tableView.backgroundView = UIImageView(image: UIImage(named: "blue_wallpaper-1"))
         

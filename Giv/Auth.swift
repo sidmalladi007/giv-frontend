@@ -42,7 +42,11 @@ class Auth {
         
         Alamofire.request(urlString, method: .get, parameters: nil, encoding: URLEncoding.default, headers: headers).responseJSON { response in
             if let JSON = response.result.value {
+                print("success json transactions")
+
                 let JSONResponse = JSON as! NSDictionary
+                print("JSON BELOW transactions")
+                print(JSON)
             }
         }
     }
@@ -59,8 +63,8 @@ class Auth {
             if let JSON = response.result.value {
                 let JSONResponse = JSON as! NSDictionary
                 let token = JSONResponse["token"]!
-                print("jtw token login")
-                print(token)
+//                print("jtw token login")
+//                print(token)
                 PlistManager.sharedInstance.saveValue(value: token as AnyObject, forKey: "token")
             }
         }
@@ -98,11 +102,10 @@ class Auth {
         }
     }
     
-    func getCharities() {
+    func getCharities(completion: @escaping (Any?) -> Void) {
         
-        print("hit inside getCharity")
-        
-        let urlString = "http://localhost:3000/api/listcharities"
+    
+        let urlString = "http://128.237.165.19:3000/api/listcharities"
         
         let headers: HTTPHeaders = [
             "Authorization": PlistManager.sharedInstance.getValueForKey(key: "token")! as! String,
@@ -112,11 +115,9 @@ class Auth {
         Alamofire.request(urlString, method: .get, parameters: nil, encoding: URLEncoding.default, headers: headers).responseJSON { response in
             if let JSON = response.result.value {
                 let JSONResponse = JSON as! NSDictionary
-                print("JSON BELOW")
-                print(JSON)
+                let list_charities = JSONResponse["charities"]!
+                completion(list_charities)
             }
-            
         }
-
     }
 }

@@ -17,17 +17,16 @@ class CharityTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        auth.getCharities()
+        auth.getCharities(completion: self.setCharities)
         
         charityNames = ["UNICEF", "RED CROSS", "SUSAN KOMEN"]
         
         tableView.backgroundView = UIImageView(image: UIImage(named: "blue_wallpaper-1"))
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    func setCharities(charities: Any?){
+        charityNames = charities as! [String]
+        print(charityNames)
     }
 
     override func didReceiveMemoryWarning() {
