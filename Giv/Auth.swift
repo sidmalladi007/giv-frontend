@@ -81,4 +81,20 @@ class Auth {
             }
         }
     }
+    
+    func getCharities() {
+        let urlString = "http://localhost:3000/api/listcharities"
+        
+        let headers: HTTPHeaders = [
+            "Authorization": PlistManager.sharedInstance.getValueForKey(key: "token")! as! String,
+            "Accept": "application/json"
+        ]
+        
+        Alamofire.request(urlString, method: .get, parameters: nil, encoding: URLEncoding.default, headers: headers).responseJSON { response in
+            if let JSON = response.result.value {
+                let JSONResponse = JSON as! NSDictionary
+            }
+        }
+
+    }
 }

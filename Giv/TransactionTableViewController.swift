@@ -8,6 +8,14 @@
 
 import UIKit
 
+extension Double {
+    /// Rounds the double to decimal places value
+    func roundTo(places:Int) -> Double {
+        let divisor = pow(10.0, Double(places))
+        return (self * divisor).rounded() / divisor
+    }
+}
+
 class TransactionTableViewController: UITableViewController {
     
     let auth = Auth()
@@ -53,7 +61,6 @@ class TransactionTableViewController: UITableViewController {
         return transactionNames.count
     }
     
-
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = self.tableView.dequeueReusableCell(withIdentifier:"TransactionViewCell", for: indexPath) as! TransactionViewCell
